@@ -273,25 +273,19 @@
                 </div>
             </div>
         </div>
+    </section>
+    <section class="latest">
 
     </section>
-    <section class="latest" id="works">
-
-    </section>
-    <section class="clients" id="clients">
+    <section class="clients">
 
     </section>
     <footer class="need">
 
     </footer>
-    <script>
-        function myFunction() {
-            document.getElementById("cookies").style.display = "none";
-        }
-    </script>
 
     <!--Latest Work-->
-    <section class="lat-work">
+    <section class="lat-work" id="works">
         <p class="Latest">Latest Work</p>
         <div class="lat-grup-img">
             <div class="lat-img-block"><img src="/img/work1.png" class="lat-img-1"></div>
@@ -302,7 +296,7 @@
             <div class="lat-img-block"><img src="/img/work6.png" class="lat-img-6"></div>
         </div>
         <!--Fotter-->
-        <div class="block-clients">
+        <div class="block-clients" id="clients">
             <p class="fot-client">Clients</p>
             <div class="flex-client">
                 <img class="img-client" src="/img/msft.png" alt="msft">
@@ -318,6 +312,11 @@
 
         </div>
     </section>
+    <script>
+        function myFunction() {
+            document.getElementById("cookies").style.display = "none";
+        }
+    </script>
 </body>
 
 </html>
