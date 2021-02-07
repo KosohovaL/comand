@@ -30,7 +30,6 @@ body {
 /* Cookies begin */
 .cookies {
     width: 100%;
-    /* height: 72px; */
     padding: 2% 0;
     position: absolute;
     top: 0;
@@ -55,7 +54,6 @@ body {
 /* Header begin */
 .header {
     width: 100%;
-    /* height: 872px; */
     background-color: aqua;
     background-image: linear-gradient(to top, #3695ff, #3564fc); 
     position: relative;
