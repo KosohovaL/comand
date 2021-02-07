@@ -30,7 +30,8 @@ body {
 /* Cookies begin */
 .cookies {
     width: 100%;
-    height: 72px;
+    /* height: 72px; */
+    padding: 2% 0;
     position: absolute;
     top: 0;
     display: flex;
@@ -54,7 +55,7 @@ body {
 /* Header begin */
 .header {
     width: 100%;
-    height: 872px;
+    /* height: 872px; */
     background-color: aqua;
     background-image: linear-gradient(to top, #3695ff, #3564fc); 
     position: relative;
@@ -209,7 +210,7 @@ body {
 }
 
 .lang__text {
-  margin-right: 10px;
+    margin-right: 10px;
     color: #d2d2d2;
     font-size: 1rem;
     text-transform: uppercase;
@@ -252,7 +253,7 @@ body {
     font-weight: 300;
     font-stretch: normal;
     font-style: normal;
-    line-height: 2.19;
+    line-height: 2;
     letter-spacing: 0.4px;
     text-align: center;
     color: #ffffff;
@@ -270,15 +271,18 @@ body {
     font-style: normal;
     letter-spacing: 0.4px;
     text-align: center;
+    text-transform: uppercase;
     color: #3695ff;
 }
 
 .button--small {
     width: 112px;
     height: 30px;
+    margin: 0;
     border-radius: 15px;
     font-size: 0.75rem;
     letter-spacing: 0.3px;
+    color: #194277;
 }
 
 .button:hover {
@@ -286,9 +290,8 @@ body {
 }
 
 .arrow {
+    margin: 2% 0;
     font-size: 2rem;
-    position: absolute;
-    bottom: 2%;
     color: #8cc0ff;
 }
 /* Header end */
@@ -318,6 +321,7 @@ body {
     font-style: normal;
     letter-spacing: normal;
     text-align: center;
+    text-transform: uppercase;
     color: #3677fd;
 }
 
@@ -326,7 +330,7 @@ body {
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
-    line-height: 2.19;
+    line-height: 2;
     letter-spacing: normal;
     text-align: center;
     color: #5a5a5a;
@@ -433,8 +437,8 @@ body {
 }
 
 .clients__img {
-    width: 20%;
-    margin: 3% 0;
+    width: 21%;
+    margin: 2% 0;
 }
 /* Clients end */
 
@@ -467,51 +471,29 @@ body {
 }
 /* Ready end */
 
-/* @media (min-width: 768px) {}
-@media (min-width: 1200px) {} */
-
 @media (max-width: 768px) {
     html {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .header__photo {
         width: 120px;
         height: 120px;
-        margin: 35% 0 5%; 
-        border-radius: 50%;
-        border: solid 8px rgba(98, 146, 255, 0.8);
-        box-shadow: 0 0 30px rgba(84,135,255,0.8) inset; 
-        background-color: #ffffff;
+        margin: 20% 0 5%; 
     }
 
     .button {
         width: 140px;
         height: 40px;
-        border-radius: 27.5px;
-        background-color: #ffffff;
-        border: none;
-        font-size: 1rem;
-        font-weight: bold;
-        font-stretch: normal;
-        font-style: normal;
-        letter-spacing: 0.4px;
-        text-align: center;
-        color: #3695ff;
+    }
+
+    .button--small {
+        width: 90px;
+        height: 25px;
     }
 
     .expert-cols-item {
         width: 46%;
-        height: auto;
-        padding: 2%;
-    }
-
-    .lat-img-block { 
-        background-color: rgb(240, 240, 240);
-        margin-bottom: 5%;
-        width: 45%;
-        border-radius: 7.5px;
-        flex-wrap: wrap;
     }
 }
 
@@ -523,24 +505,39 @@ body {
     .header__photo {
         width: 80px;
         height: 80px;
-        margin: 30% 0 5%; 
-        border-radius: 50%;
-        border: solid 8px rgba(98, 146, 255, 0.8);
-        box-shadow: 0 0 30px rgba(84,135,255,0.8) inset; 
-        background-color: #ffffff;
+        margin: 25% 0 5%; 
+    }
+
+    .button {
+        width: 90px;
+        height: 25px;
+    }
+
+    .button--small {
+        width: 80px;
+        height: 25px;
+    }
+
+    .header__title {
+        width: 80%;
+        font-size: 1.5rem;
+    }
+
+    .section__title {
+        font-size: 2rem;
+    }
+
+    .section__subtitle {
+        font-size: 1.3rem;
     }
 
     .expert-cols-item {
-        width: 90%;
-        height: auto;
-        padding: 2%;   
+        width: 90%;  
     }
     .icon {
         margin: 0 auto 2% auto;
-        padding: 2%;
         width: 55px;
         height: 55px;
-        display: flex;
     }
     .about,
     .expert {
@@ -549,6 +546,10 @@ body {
 
     .last-img-block {
         width: 45%;
+    }
+
+    .ready-text {
+        font-size: 1.2rem;
     }
 }
 
