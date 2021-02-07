@@ -226,8 +226,10 @@ body {
     width: 141px;
     height: 141px;
     margin: 7% 0; 
-    border: solid 3px #ffffff;
     border-radius: 50%;
+    border: solid 8px rgba(88, 157, 254, 0.7);
+    /* outline: solid 8px rgba(71, 148, 254, 0.7); */
+    
     background-color: #ffffff;
 }
 
