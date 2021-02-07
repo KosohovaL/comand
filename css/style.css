@@ -227,8 +227,8 @@ body {
     height: 141px;
     margin: 7% 0; 
     border-radius: 50%;
-    border: solid 10px rgba(88, 157, 254, 0.7);
-    box-shadow: 0 0 10px rgba(71,148,254,0.8);
+    border: solid 10px rgba(88, 157, 254, 0.5);
+    box-shadow: 0 0 20px rgba(0,0,254,0.8);
     background-color: #ffffff;
 }
 
@@ -277,7 +277,6 @@ body {
     border-radius: 15px;
     font-size: 0.75rem;
     letter-spacing: 0.3px;
-    color: #194277;
 }
 
 .arrow {
@@ -289,6 +288,22 @@ body {
 /* Header end */
 
 /* About begin */
+.section__title {
+    margin: 3% 0;
+    background-image: linear-gradient(to top, #3695ff, #3564fc), linear-gradient(to bottom, #3677fd, #3677fd);
+    font-size: 3.125rem;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: center;
+    text-transform: capitalize;
+    color: #3677fd;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .section__text {
     font-size: 16px;
     font-weight: normal;
@@ -302,6 +317,7 @@ body {
 
 .card-container {
     width: 70%;
+    margin: 0 auto;
     margin-top: 5%;
     display: flex;
     flex-wrap: wrap;
@@ -328,7 +344,6 @@ body {
     width: 29%;
     height: auto;
     padding: 2%;
-    
 }
 
 .icon {
@@ -355,22 +370,25 @@ body {
     font-size: 24px;
     font-weight: bold;
 }
-
 /* Expert end */
 
 /* Latest begin */
+.lat-work {
+    width: 100%;
+}
 
-.lat-work {width: 100%;}
-
-.Latest {text-align: center;
+.Latest {
+    text-align: center;
     padding-bottom: 3%;
     font-size: 1.7rem;
     margin-left: -2%;
     color: #3677fd;
     font-family: Arial;
-    margin-top: 5%;}
+    margin-top: 5%;
+}
 
-.lat-grup-img { display: flex;
+.lat-grup-img { 
+    display: flex;
     margin-bottom: 7%;
     width: 70%;
     flex-wrap: wrap;
@@ -378,98 +396,57 @@ body {
     justify-content: space-between;
     }
 
-.lat-img-block:hover {box-shadow: 0px 4px 10px #00000080;}
+.lat-img-block:hover {
+    box-shadow: 0px 4px 10px #3677fd;
+}
 
-
-.lat-img-block { background-color: rgb(240, 240, 240);
+.lat-img-block { 
+    background-color: rgb(240, 240, 240);
     margin-bottom: 5%;
     width: 30%;
     border-radius: 7.5px;
     flex-wrap: wrap;
-    }
+}
 
-
-.lat-img-1 { width: 100%;
-    }
-
-.lat-img-2 {width: 100%;
-    }
-
-.lat-img-3 { width: 100%;
-    }
-
-.lat-img-4 { width: 100%;
-    }
-
-.lat-img-5 {width: 100%;
-    }
-
-.lat-img-6 { width: 100%;
-    }
-
+.lat-img { 
+    width: 100%;
+}
 /* Latest end */
 
 /* Clients begin */
-.block-clients {
-    background-color: #f1f8ff}
-
-.fot-client {text-align: center;
-    padding-top: 3%;
-    padding-bottom: 1%;
-    font-size: 1.7rem;
-    font-family: 'Lato', sans-serif;
-    color: #3677fd;}
-
-.flex-client {display: flex;
-    justify-content: space-between;
-    width: 60%;
-    margin: 0 auto;
-    padding-bottom: 2%;
+.clients {
+    width: 100%;
+    background-color: #f1f8ff;
 }
 
-.img-client { width: 10%;
-    height: 20%; }
-
+.clients__img {
+    height: 100%;
+    margin-bottom: 2%;
+}
 /* Clients end */
 
 /* Need begin */
-.redy {margin-top: -2%;
+.redy {
+    width: 100%;
+    margin-top: -2%;
     background-color: aqua;
-    background-image: linear-gradient(to top, #3695ff, #3564fc);}
+    background-image: linear-gradient(to top, #3695ff, #3564fc);
+}
 
-.need-text { font-size: 1.7rem;
+.need-text { 
+    font-size: 1.7rem;
     font-family: 'Lato', sans-serif;
     color: #ffff;
     text-align: center;
     padding-top: 3%;
-    padding-bottom: 3%;}
+    padding-bottom: 3%;
+}
 
-.need-buttom { margin-left: 2%;
-    font-size: 0.6rem;
-    width: 8%;
-    border-radius: 27.5px;
-    background-color: #ffffff;
-    border: none;
-    padding-top: 0.5%;
-    padding-bottom: 0.5%;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.88;
-    letter-spacing: 0.4px;
-    text-align: center;
-    color: #3695ff;}
-
-.need-buttom:hover {width: 8.5%;
-    box-shadow: 0px 4px 10px #00000080;}
-
-
-
+.need-buttom:hover {
+    width: 8.5%;
+    box-shadow: 0px 4px 10px #00000080;
+}
 /* Need end */
-
-/**Latest Work_block**/
-
-/**fotter**/
 
 @media (max-width: 768px) {
     .expert-cols-item {
@@ -499,11 +476,7 @@ body {
     .link {
         font-size: 14px;
     }
-    .title-section {
-        font-size: 25px;
-    }
 }
-
 
 @media (min-width: 1200px) {
 }
