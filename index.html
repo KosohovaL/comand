@@ -159,23 +159,123 @@
         </div>
     </header>
     <section class="about" id="about">
-        <div class="section__title">
-            About me
-        </div>
-        <div class="card-container">
-
-            <div class="section__text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex
-                ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                culpa
-                qui officia
-            </div>
+        <h2 class="title-section title">About Me</h2>
+        <div class="section__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia
         </div>
     </section>
     <section class="expert" id="services">
+        <h2 class="title-section title">Expert In</h2>
+        <div class="expert-cols-container">
+            <div class="expert-cols-item">
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45"
+                        height="66" viewBox="0 0 45 66">
+                        <image id="Inteligentny_obiekt_wektorowy" data-name="Inteligentny obiekt wektorowy" width="45"
+                            height="66"
+                            xlink:href="data:img/png;base64,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" />
+                    </svg>
+                </div>
+                <h3 class="subtitle-expert title">
+                    <a class="link" href="#">MOBILE APP DESIGN</a>
+                </h3>
+                <div class="section__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                    labore
+                    et dolore magna aliqua. Ut enim ad minim.
+                </div>
+            </div>
+            <div class="expert-cols-item">
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="72"
+                        height="58" viewBox="0 0 72 58">
+                        <image width="72" height="58"
+                            xlink:href="data:img/png;base64,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" />
+                    </svg>
+                </div>
+                <h3 class="subtitle-expert title">
+                    <a class="link" href="#">WEB DESIGN</a>
+                </h3>
+                <div class="section__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                    labore
+                    et dolore magna aliqua. Ut enim ad minim.
+                </div>
+            </div>
+            <div class="expert-cols-item">
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="58"
+                        height="66" viewBox="0 0 58 66">
+                        <image width="58" height="66"
+                            xlink:href="data:img/png;base64,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" />
+                    </svg>
+                </div>
+                <h3 class="subtitle-expert title">
+                    <a class="link" href="#">WEB DEVELOPMENT</a>
+                </h3>
+                <div class="section__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                    labore
+                    et dolore magna aliqua. Ut enim ad minim.
+                </div>
+            </div>
+            <div class="expert-cols-item">
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="71"
+                        height="67" viewBox="0 0 71 67">
+                        <image width="71" height="67"
+                            xlink:href="data:img/png;base64,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" />
+                    </svg>
+                </div>
+                <h3 class="subtitle-expert title">
+                    <a class="link" href="#">PRODUCT DESIGN</a>
+                </h3>
+                <div class="section__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim.
+                </div>
+            </div>
+            <div class="expert-cols-item">
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="63"
+                        height="63" viewBox="0 0 63 63">
+                        <image id="Inteligentny_obiekt_wektorowy_kopia" data-name="Inteligentny obiekt wektorowy kopia"
+                            width="63" height="63"
+                            xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAA/CAYAAABXXxDfAAAFd0lEQVRogd1brW8cRxT/zeoMDBJUYNIoRVXUWI0KjgRcAiOlckFBUR01hQno31DSokZKyipVLiprIlkytAxCTOoowCiRgUFAVFUmBq481czO7r7ZfTM7Mzt7d7khnntfM+/rt3ueGzH96RJ6SNh/gU1IbAO4C+AGJNZbfH7O8Vma7NKS7LD7OYfEMYB9SOwAeM3JNs43zOuQeArgfoZNxAcgl22bvwvgMYATyi8gQMc9AK8gjONq2PwuTXhovTqCoWWybfPva7+Uf4Q/ISKK8QISa7WRMkqHEDiAxDsIXNaRK/mbAL6rZQV+hMQ/lr4gGRBWZh4CuKkDIOUbAM8sB9o6Nu0XQnsO4IDwVUI3IDGDwJToXIXECwBbENgry/5nXfaq1FVkrmrBUuElgEeQOCI0tOZfQeIvQvvEKi1/OT6HxJYhqODecep0aZLQfoDEE4fOLR1UiduEfwbgc7XPwpCe6sg0kf/DAN1Rb+llKVcRbydsP0faj9Kfiq78VJimS2SzBrdSQWX8ewhcuDc7EAtYO0z/p9ju6lwYf14SjvJ3U2V+u2XkkVHwLxy/iQBnAgGw106HdqFb2KZtF6a8K8KhKRX/wtmzTmkMMc8TQLXwIaHdLfQLTDMOvIbTHjNhG7doIq/tZhwQ2g3V8+tE+J3XcMgi2VthoG1b55TM14uW8OXis84o5wPAM8ovWOFUp/OC1JgAqEeR1enETfhpgQFI2E/BiAUpxizSyw8FQJedWNtmtHs+fT63VshnO67n55V1Vic/AIb1/IoCYFrZ55JdMAAWLCeH06P2eh4ALGoKpxxizDcP3MSiAJD0vIh3bhkBMCIorZ7PFIBFAqDLDkNjHnUDAzCEnxSUdAAc9oYXI5s765ZOIGh3yp41vGIA6LDjec6vPgDyZb8sABib4RgAdL7bI2MAxuD7bEa8Arvf7UM3n+p07qxba4YB4IQV6hwvidaxScBg7VhzWnWfmWMnfilOv6E9hMAd59GYTbtGbU/YBV0BELLPoZj5dSL7EQS2ejbuCspNfebX2TvZryMoAT0/2hNg0sN36we3gh8A7bL3VXeuCmjsvYU0ZwYC/5qD0tCszwjtDQRO3RkWze8AytPbTyveJKzkfcGIdrqi/Ufmr+q+7VtDkDPacq6Otp+wOjWtDsADAL9Xct2XHM7JztynEGMn42OxlyY6tP7/4Tl5Gft/yGPPtc8AO+4vNvMHwHR+IgDazvscdm5y5DfAlKx7g9IQ2z9ICsx44OKpm46RTWqFksgDXmgAxgbA7FmnNBH4khO08REAsG/NgTr+nvfxPjQAZHT8/8ZacQCMA7y+RYcEIJdshP14wAtZgBs5nM4MgOGANxQAo3TnA4DpPb8CABiO9tyYBwD2ZXVAK3QzvywAOIfHXhftOcO5AHDejz0f3/t9fgwAjB1jVYUZbbSP+5a3SABMy/oVSiv0ZZyGuYG+EZpxJ2+hT4CPSVDOlfPHRGwWVd4cfxkA0F0VM0I5LvT1q2ZMzdUM9yKxnxcBgLzsLX3npqHtK7TfaYk/gzCXjFwLhnzu3excAXDNusBU0nYKfeFO6Htn1VCXcX4bHIDlAcA1489tQlP+vq7Q/bH1c2zgW90OgmmB9ogBwLED0KWpUt83/lTjDEJfMKxPbE4AfAPoe2dVxlWk/tZXM6S+gXFqFOmhwBetZb+GwHvnIYg9rjU8sQEhHySeAk3NYURFu2JQfQZJerw88LiA1H6e6JhPf7V2dg8Sf9b366rBbb5Ni/nMzmWgXMQ1Ulv2zCRYXygE826/B6Ev3O1a1A//DXDX+LVH+d3z+bIkvjRXRZtb1Oouju8sre+zT7Yp/1zH4OcQOIbUuLUDaW5RU1kB/A+U3VyHmgZF5QAAAABJRU5ErkJggg==" />
+                    </svg>
+                </div>
+                <h3 class="subtitle-expert title">
+                    <a class="link" href="#">UX & UI</a>
+                </h3>
+                <div class="section__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim.
+                </div>
+            </div>
+            <div class="expert-cols-item">
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="78"
+                        height="65" viewBox="0 0 78 65">
+                        <image width="78" height="65"
+                            xlink:href="data:img/png;base64,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" />
+                    </svg>
+                </div>
+                <h3 class="subtitle-expert title">
+                    <a class="link" href="#">ANIMATIONS</a>
+                </h3>
+                <div class="section__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim.
+                </div>
+            </div>
+        </div>
+        </div>
+
+
     </section>
     <section class="latest" id="works">
 
