@@ -127,6 +127,9 @@ body {
     transform: scale(0);
 }
 
+.header__burger:hover {
+    cursor: pointer;
+}
 /* Burger end */
 
 .header__menu {
@@ -290,6 +293,7 @@ body {
 
 .button:hover {
     box-shadow: 0 0 20px rgba(84,135,255,0.8) inset; 
+    cursor: pointer;
 }
 
 .arrow {
