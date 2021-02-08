@@ -283,6 +283,11 @@ body {
     color: #194277;
 }
 
+.button--blue {
+    background-image: linear-gradient(to top, #3695ff, #3564fc), linear-gradient(to bottom, #3677fd, #3677fd);
+    color: #ffffff;
+}
+
 .button:hover {
     box-shadow: 0 0 20px rgba(84,135,255,0.8) inset; 
 }
@@ -310,6 +315,10 @@ body {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.section__title--margin0 {
+    margin-top: 0;
 }
 
 .section__subtitle {
@@ -468,6 +477,87 @@ body {
     font-weight: 700;
 }
 /* Ready end */
+
+/* Form begin */
+.form {
+    display: none;
+    width: 80%;
+    border-radius: 10px;
+    position: fixed;
+    top: 0;
+    right: 10%;
+    z-index: 3;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.form__close {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    z-index: 3;
+    margin-top: 20px;
+    margin-top: 2%;
+    margin-left: 95%;
+}
+
+.form__close::before,
+.form__close::after {
+    content: '';
+    background-image: linear-gradient(to top, #3695ff, #3564fc), linear-gradient(to bottom, #3677fd, #3677fd);
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transition: all 0.3s ease 0s;
+}
+
+.form__close::before {
+    transform: rotate(45deg);
+    top: 9px;
+}
+
+.form__close::after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+}
+
+.form__close:hover {
+    cursor: pointer;
+}
+
+.form__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+input, 
+textarea {
+    width: 60%;
+    margin-bottom: 0.8%;
+    padding: 2px 10px;
+    color: #b7c0c9;
+    outline : none; 
+    border: 1px solid #b7c0c9;
+    border-radius: 5px;
+}
+
+input {
+    height: 50px;
+}
+
+textarea {
+    resize: none;
+}
+
+input::placeholder, 
+textarea::placeholder {
+    text-transform: capitalize;
+}
+/* Form end */
 
 @media (max-width: 768px) {
     html {

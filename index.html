@@ -19,7 +19,7 @@
             <div class="cookies__text">
                 This site uses cookies, so that my service can work better.
             </div>
-            <button class="button button--small" onclick="myFunction()">Accept</button>
+            <button class="button button--small" onclick="closeCookies()">Accept</button>
         </div>
         <div class="menu-container">
             <div class="header__burger">
@@ -475,12 +475,39 @@
                     Ready to work!
                 </span>
             </div>
-            <button class="button">hire me</button>
+            <button class="button" id="form-open" onclick="openForm()">hire me</button>
         </div>
     </section>
+    <form action="#" method="post" class="form" id="form">
+        <div class="form__close" onclick="closeForm()">
+            <span></span>
+        </div>
+        <div class="form__container">
+            <div class="section__title section__title--margin0">
+                hire me
+            </div>
+            <input type="text" name="name" id="name" placeholder="Your name" required>
+            <br>
+            <input type="email" name="email" id="email" placeholder="Your e-mail" required>
+            <br>
+            <textarea name="message" id="" cols="30" rows="10" placeholder="Your message" required></textarea>
+            <br>
+            <input class="button button--blue" type="submit" value="Send message">
+        </div>
+    </form>
     <script>
-        function myFunction() {
+        function closeCookies() {
             document.getElementById("cookies").style.display = "none";
+        }
+    </script>
+    <script>
+        function openForm() {
+            document.getElementById("form").style.display = "block";
+        }
+    </script>
+    <script>
+        function closeForm() {
+            document.getElementById("form").style.display = "none";
         }
     </script>
 </body>
